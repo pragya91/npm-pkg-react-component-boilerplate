@@ -1,0 +1,38 @@
+{
+  "name": "pkg-name",
+  "version": "0.0.7",
+  "description": "boiler plate code to create, build and publish your react components",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack --mode development",
+    "build:prod": "webpack --mode production",
+    "prepublish": "npm -s run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pragya91/npm-pkg-react-component-boilerplate.git"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/pragya91/npm-pkg-react-component-boilerplate.git",
+  "dependencies": {
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "peerDependencies": {
+    "react": "^16.4.0"
+  }
+}
